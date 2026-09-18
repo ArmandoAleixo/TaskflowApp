@@ -1,0 +1,13 @@
+uploads = []
+
+[[generated]]
+id = "N_vJXWVXP5_HoAs1RyX3d"
+uri = "file://artifacts/taskflow/assets/images/icon.png"
+type = "image"
+title = "taskflow icon"
+
+[[outputs]]
+id = "0KVW4Duca_aBr_l6c7WIg"
+uri = "file://TaskFlow_Fase1_Documentacao_Revisada.pdf"
+type = "pdf"
+title = "TaskFlow — Documentação Fase 1 (Revisada)"

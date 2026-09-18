@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "TaskFlow"
+version = "1.0.0"
+id = "artifacts/taskflow"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 19256
+
+[services.development]
+run = "pnpm --filter @workspace/taskflow run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/taskflow", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/taskflow", "run", "serve" ]
+
+[services.env]
+PORT = "19256"
+BASE_PATH = "/"
